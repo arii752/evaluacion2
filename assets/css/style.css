@@ -1,0 +1,379 @@
+@import url(variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*navbar*/
+nav {
+        background-color: transparent;
+        backdrop-filter: blur(5px);
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+}
+
+
+.logo img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.nav-links a {
+    color: var(--neutral-color-light);
+    
+}
+
+.logo, .logo img, .nav-links .inline-block{
+    transition: .2s;
+}
+
+.logo:hover, .logo img:hover, .nav-links .inline-block:hover {
+    transform: scale(1.2);
+}
+
+
+.nav-links {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: var(--secondary-color2);
+    padding: .4rem 1rem;
+    border-radius: 15px;
+
+    font-weight: var(--font-bold);
+    font-size: 1rem;
+    text-transform: none;
+
+    cursor: pointer;
+    transition: transform .4s;
+
+}
+
+.btn:hover {
+    background-color: var(--secondary-color2);
+    transform: scale(1.1);
+}
+
+.inline-block {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 0.4rem;
+}
+
+
+/*portada*/
+header {
+        background-image: url(../img/wallpaper.jpg);
+        width: 100%;
+        padding: 10rem 0;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+
+.inicio .contenido-banner img{
+        background-color: var(--secondary-color2);
+        margin-top: 40px;
+        border: 10px solid var(--secondary-color2);
+        display: block;
+        width: 85%;
+        margin: auto;
+        border-radius: 80%;
+    }
+
+.inicio .contenido-banner h1{
+        background-color: var(--primary-color);
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+.inicio .contenido-banner h2{
+        background-color: var(--primary-color);
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+.profile-img {
+    background-image: url("../img/cinnamoroll_png_by_dellanovia_d6q63t5-fullview.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    width: 25rem;
+    height: 25rem;
+
+}
+    .hero-text {
+        width: 30rem;
+        height: 100%;
+    
+    }
+    
+    h1 {
+
+        font-size: 3rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    
+    }
+    
+.hero-text p {
+        letter-spacing: 0.02rem;
+        line-height: 2rem;
+        text-align: justify;
+    
+    }
+    
+/*sección sobre mi*/
+.sobremi{
+        background-color: var(--primary-color);
+        color: var(--neutral-color-dark);
+        padding: 50px 20px;
+    }
+.sobremi .contenido-seccion1{
+        max-width: 1100px;
+        margin: auto;
+    }
+    
+.sobremi h2{
+        font-size: 40px;
+        background-color: transparent;
+        border-style: ridge;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px 0;
+    
+    }
+    
+.sobremi .fila{
+        display: flex;
+    }
+    
+.sobremi p{
+    font-family: "Poppins", sans-serif;
+    text-align:center
+}
+    
+
+.sobremi .fila .col .contenedor-habilidades{
+        display: flex;
+        flex-wrap: wrap;
+    }
+.sobremi .fila .col .contenedor-habilidades .habilidad{
+        width: 200px;
+        height: 100px;
+        background-color: #252A2E;
+        color: white;
+        border-radius: 10px;
+        margin: 0 15px 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        transition: .3s;
+
+}.sobremi .fila .col .contenedor-habilidades .habilidad:hover{
+        background-color: var(--secondary-color2);
+    }
+
+.sobremi .fila .col .contenedor-habilidades .habilidad i{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+.sobremi .fila .col .contenedor-habilidades2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.sobremi .fila .col .contenedor-habilidades2 .habilidad2 {
+        width: 200px;
+        height: 100px;
+        background-color: #252A2E;
+        color: white;
+        border-radius: 10px;
+        margin: 0 15px 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    
+.sobremi .fila .col .contenedor-habilidades2 .habilidad2:hover{
+    background-color: var(--secondary-color2);
+    }
+
+.sobremi .fila .col .contenedor-habilidades2 .habilidad2 i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+    
+/*sección proyectos*/
+.proyectos {
+        background-color: var(--secondary-color1);
+        position: sticky;
+        padding: 50px 20px;
+    }
+
+.proyectos .contenido-seccion2{
+        max-width: 1100px;
+        margin: auto;
+    }
+.proyectos h2{
+        font-size: 40px;
+        background-color: transparent;
+        border-style: ridge;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px 0;
+    
+    }
+
+    /*sección recomendaciones*/
+.recomendaciones{
+        background-color: var(--primary-color);
+        color: var(--neutral-color-light);
+        padding: 50px 20px;
+    }
+
+.recomendaciones .contenido-seccion3{
+        max-width: 1100px;
+        margin: auto;
+    }
+.recomendaciones h2{
+        font-size: 40px;
+        background-color: transparent;
+        border-style: ridge;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px 0;
+    
+    }
+.recomendaciones .fila{
+        display: flex;
+        justify-content: space-between;
+    }
+.recomendaciones .fila .col{
+        width: 48%;
+        padding: 0 20px;
+    }
+
+.recomendaciones .fila .izquierda{
+        border-right: 2px solid #252A2E;
+    }
+
+.recomendaciones .fila .derecha{
+        border-left: 2px solid #252A2E;
+    }
+
+.recomendaciones .fila .item{
+        padding: 25px;
+        margin-bottom: 30px;
+        background-color: var(--secondary-color1);
+        position: relative;
+        border-radius: 5%;
+    } 
+
+.recomendaciones .fila .item .texto{
+        color: var(--neutral-color-dark);
+        font-size: 22px;
+        font-weight: bold;
+        display: block;
+    }
+.recomendaciones .fila .item q{
+        line-height: 24px;
+    }
+.recomendaciones .fila .izq{
+        border-right: 2px solid var(--neutral-color-dark);
+        margin-right: 20px;
+    }
+.recomendaciones .fila .der{
+        border-left: 2px solid var(--neutral-color-dark);
+        margin-left: 20px;
+    }
+.recomendaciones .fila .item .conectoriz{
+        height: 2px;
+        background-color: var(--neutral-color-dark);
+        width: 47px;
+        position: absolute;
+        top: 50%;
+        right: -47px;
+        z-index: 5;
+    }
+.recomendaciones .fila .item .conectoriz .circuloiz{
+        display: block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: var(--neutral-color-dark);
+        float: right;
+        position: relative;
+        bottom: 4px;
+    }
+.recomendaciones .fila .item .conectordr{
+        height: 2px;
+        background-color: var(--neutral-color-dark);
+        width: 47px;
+        position: absolute;
+        top: 50%;
+        left: -47px;
+        z-index: 5;
+    }
+.recomendaciones .fila .item .conectordr .circulodr{
+        display: block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: var(--neutral-color-dark);
+        float: left;
+        position: relative;
+        bottom: 4px;
+    }
+    
+    /*sección contacto*/
+.contacto{
+        background-color: var(--secondary-color1);
+        padding: 50px 20px;
+    }
+
+    .contacto .contenido-seccion4{
+        max-width: 1100px;
+        margin: auto;
+    }
+.contacto h2{
+        font-size: 40px;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        padding: 20px 0;
+    
+    }
+
+/*footer*/   
+footer{
+        background-image: url(../img/wallpaper.jpg);
+    }
